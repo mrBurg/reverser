@@ -1,7 +1,7 @@
-const reverseString = require('./../../public/js/index');
+const { reverseString } = require('./../../public/js/functions');
 
-// const data = 'abcdefghijklmnopqrstuvwxy';
+const data = 'abcdefghijklmnopqrstuvwxy';
 
-/* test('Pass a string to reverse it', () => {
+test('Pass a string to reverse it', () => {
   expect(reverseString(data)).toBe(data.split('').reverse().join(''));
-}); */
+});

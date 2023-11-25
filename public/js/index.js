@@ -1,5 +1,9 @@
-function ready() {
-  console.log('Hello World!!!');
+function reverseString(str) {
+  return str.split('').reverse().join('');
 }
 
-// document.addEventListener('DOMContentLoaded', ready);
+function ready() {
+  console.log(reverseString('Hello World!!!'));
+}
+
+document.addEventListener('DOMContentLoaded', ready);
