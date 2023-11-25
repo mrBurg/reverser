@@ -1,0 +1,8 @@
+<head>
+  <title><%= data.title %></title>
+  <% data.links.forEach((item) => { %>
+  <link rel="<%= item.rel %>" href="<%= item.href %>" />
+  <% }) %>
+
+  <%- include('./templates') %>
+</head>
