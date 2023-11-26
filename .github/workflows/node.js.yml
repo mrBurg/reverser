@@ -10,7 +10,7 @@ on:
     branches: ['main']
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
 
     strategy:
@@ -29,6 +29,9 @@ jobs:
 
       - name: Install dependencies
         run: npm i
+
+      - name: Collect css
+        run: npm run sass
 
       - name: Run tests
         run: npm test
