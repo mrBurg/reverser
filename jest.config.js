@@ -1,8 +1,6 @@
-const config = {
+module.exports = {
   clearMocks: true,
   transform: {
     '^.+\\.js$': 'babel-jest',
   },
 };
-
-module.exports = config;
