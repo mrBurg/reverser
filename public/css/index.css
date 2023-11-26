@@ -13,4 +13,13 @@ main {
   flex-direction: column;
 }
 
+#container {
+  font-weight: bold;
+  font-size: 5em;
+}
+#container::first-letter {
+  font-size: 1.5em;
+  color: brown;
+}
+
 /*# sourceMappingURL=index.css.map */

@@ -1,4 +1,4 @@
-const { reverseString } = require('./../../public/js/functions');
+const { reverseString } = require('../../public/js/common');
 
 const data = 'abcdefghijklmnopqrstuvwxy';
 
