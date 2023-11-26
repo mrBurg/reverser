@@ -19,7 +19,6 @@
   },
   "homepage": "https://reverser-3kge.onrender.com",
   "dependencies": {
-    "eslint": "^8.54.0",
     "jest": "^29.7.0"
   },
   "devDependencies": {
