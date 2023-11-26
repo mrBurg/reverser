@@ -1,3 +1,7 @@
+* {
+  outline: none;
+}
+
 html,
 body {
   display: flex;
@@ -11,6 +15,19 @@ body {
 main {
   display: flex;
   flex-direction: column;
+}
+
+form {
+  text-align: center;
+}
+form input {
+  border: 1px #bfbfbf solid;
+  font-size: 2em;
+  padding: 0.2em;
+  border-radius: 0.2em;
+}
+form input:focus, form input:focus-visible {
+  border-color: #999999;
 }
 
 #container {

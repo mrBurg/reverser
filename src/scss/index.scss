@@ -1,4 +1,10 @@
 $brown: brown;
+$grey: #bfbfbf;
+$grey-dark: #999999;
+
+* {
+  outline: none;
+}
 
 html,
 body {
@@ -13,6 +19,22 @@ body {
 main {
   display: flex;
   flex-direction: column;
+}
+
+form {
+  text-align: center;
+
+  input {
+    border: 1px $grey solid;
+    font-size: 2em;
+    padding: 0.2em;
+    border-radius: 0.2em;
+
+    &:focus,
+    &:focus-visible {
+      border-color: $grey-dark;
+    }
+  }
 }
 
 #container {
