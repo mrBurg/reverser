@@ -9,7 +9,7 @@ function stringCheck(data) {
     return isTrue;
   }
 
-  console.warn(`Wrong type of received data [ ${data} ]`);
+  console.log(`Wrong type of received data [ ${data} ]`);
 
   return false;
 }
