@@ -28,13 +28,13 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm i
+        run: yarn
 
       - name: Collect css
-        run: npm run sass
+        run: yarn sass
 
       - name: Run Linter
-        run: npm run lint
+        run: yarn lint
         continue-on-error: false
 
   test:
@@ -55,13 +55,13 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm i
+        run: yarn
 
       - name: Collect css
-        run: npm run sass
+        run: yarn sass
 
       - name: Run tests
-        run: npm test
+        run: yarn test
         continue-on-error: false
 
   deploy:
@@ -83,12 +83,12 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm i
+        run: yarn
 
       - name: Collect css
-        run: npm run sass
+        run: yarn sass
 
-      - run: npm run build --if-present
+      - run: yarn build --if-present
         continue-on-error: false
 
       - name: Run deploy
