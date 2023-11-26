@@ -3,7 +3,7 @@ function reverseString(str) {
 }
 
 function ready() {
-  console.log(reverseString('Hello World!!!'));
+  document.body.innerHTML = reverseString('Hello World!!!');
 }
 
 document.addEventListener('DOMContentLoaded', ready);
